@@ -51,6 +51,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/untitled5.dir/DependInfo.cmake"
-  "CMakeFiles/untitled5hw2.dir/DependInfo.cmake"
+  "CMakeFiles/fianl-exam.dir/DependInfo.cmake"
+  "CMakeFiles/final-exam2.dir/DependInfo.cmake"
   )

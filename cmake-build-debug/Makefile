@@ -66,10 +66,10 @@ RM = "C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\eric3\CLionProjects\untitled5
+CMAKE_SOURCE_DIR = C:\Users\eric3\CLionProjects\final-exam
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\eric3\CLionProjects\untitled5\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\eric3\CLionProjects\final-exam\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -98,9 +98,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\eric3\CLionProjects\untitled5\cmake-build-debug\CMakeFiles C:\Users\eric3\CLionProjects\untitled5\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\eric3\CLionProjects\final-exam\cmake-build-debug\CMakeFiles C:\Users\eric3\CLionProjects\final-exam\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\eric3\CLionProjects\untitled5\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\eric3\CLionProjects\final-exam\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,30 +129,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named untitled5
+# Target rules for targets named fianl-exam
 
 # Build rule for target.
-untitled5: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 untitled5
-.PHONY : untitled5
+fianl-exam: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 fianl-exam
+.PHONY : fianl-exam
 
 # fast build rule for target.
-untitled5/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled5.dir\build.make CMakeFiles/untitled5.dir/build
-.PHONY : untitled5/fast
+fianl-exam/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fianl-exam.dir\build.make CMakeFiles/fianl-exam.dir/build
+.PHONY : fianl-exam/fast
 
 #=============================================================================
-# Target rules for targets named untitled5hw2
+# Target rules for targets named final-exam2
 
 # Build rule for target.
-untitled5hw2: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 untitled5hw2
-.PHONY : untitled5hw2
+final-exam2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 final-exam2
+.PHONY : final-exam2
 
 # fast build rule for target.
-untitled5hw2/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled5hw2.dir\build.make CMakeFiles/untitled5hw2.dir/build
-.PHONY : untitled5hw2/fast
+final-exam2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\final-exam2.dir\build.make CMakeFiles/final-exam2.dir/build
+.PHONY : final-exam2/fast
 
 hw1.obj: hw1.cpp.obj
 
@@ -160,7 +160,7 @@ hw1.obj: hw1.cpp.obj
 
 # target to build an object file
 hw1.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled5.dir\build.make CMakeFiles/untitled5.dir/hw1.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fianl-exam.dir\build.make CMakeFiles/fianl-exam.dir/hw1.cpp.obj
 .PHONY : hw1.cpp.obj
 
 hw1.i: hw1.cpp.i
@@ -169,7 +169,7 @@ hw1.i: hw1.cpp.i
 
 # target to preprocess a source file
 hw1.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled5.dir\build.make CMakeFiles/untitled5.dir/hw1.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fianl-exam.dir\build.make CMakeFiles/fianl-exam.dir/hw1.cpp.i
 .PHONY : hw1.cpp.i
 
 hw1.s: hw1.cpp.s
@@ -178,7 +178,7 @@ hw1.s: hw1.cpp.s
 
 # target to generate assembly for a file
 hw1.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled5.dir\build.make CMakeFiles/untitled5.dir/hw1.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fianl-exam.dir\build.make CMakeFiles/fianl-exam.dir/hw1.cpp.s
 .PHONY : hw1.cpp.s
 
 hw2.obj: hw2.cpp.obj
@@ -187,7 +187,7 @@ hw2.obj: hw2.cpp.obj
 
 # target to build an object file
 hw2.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled5hw2.dir\build.make CMakeFiles/untitled5hw2.dir/hw2.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\final-exam2.dir\build.make CMakeFiles/final-exam2.dir/hw2.cpp.obj
 .PHONY : hw2.cpp.obj
 
 hw2.i: hw2.cpp.i
@@ -196,7 +196,7 @@ hw2.i: hw2.cpp.i
 
 # target to preprocess a source file
 hw2.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled5hw2.dir\build.make CMakeFiles/untitled5hw2.dir/hw2.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\final-exam2.dir\build.make CMakeFiles/final-exam2.dir/hw2.cpp.i
 .PHONY : hw2.cpp.i
 
 hw2.s: hw2.cpp.s
@@ -205,7 +205,7 @@ hw2.s: hw2.cpp.s
 
 # target to generate assembly for a file
 hw2.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled5hw2.dir\build.make CMakeFiles/untitled5hw2.dir/hw2.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\final-exam2.dir\build.make CMakeFiles/final-exam2.dir/hw2.cpp.s
 .PHONY : hw2.cpp.s
 
 # Help Target
@@ -216,8 +216,8 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... untitled5
-	@echo ... untitled5hw2
+	@echo ... fianl-exam
+	@echo ... final-exam2
 	@echo ... hw1.obj
 	@echo ... hw1.i
 	@echo ... hw1.s

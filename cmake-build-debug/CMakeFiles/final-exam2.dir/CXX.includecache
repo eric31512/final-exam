@@ -6,11 +6,13 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/eric3/CLionProjects/untitled5/hw1.cpp
+C:/Users/eric3/CLionProjects/final-exam/hw2.cpp
 iostream
+-
+vector
 -
 string
 -
-vector
+fstream
 -
 

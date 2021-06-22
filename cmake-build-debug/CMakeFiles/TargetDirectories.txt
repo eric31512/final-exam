@@ -1,4 +1,4 @@
-C:/Users/eric3/CLionProjects/untitled5/cmake-build-debug/CMakeFiles/untitled5.dir
-C:/Users/eric3/CLionProjects/untitled5/cmake-build-debug/CMakeFiles/untitled5hw2.dir
-C:/Users/eric3/CLionProjects/untitled5/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/eric3/CLionProjects/untitled5/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/eric3/CLionProjects/final-exam/cmake-build-debug/CMakeFiles/fianl-exam.dir
+C:/Users/eric3/CLionProjects/final-exam/cmake-build-debug/CMakeFiles/final-exam2.dir
+C:/Users/eric3/CLionProjects/final-exam/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/eric3/CLionProjects/final-exam/cmake-build-debug/CMakeFiles/rebuild_cache.dir
