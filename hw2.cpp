@@ -226,7 +226,6 @@ private:
     string commodityName;
     int lowest_Frequency_Response;
     int highest_Frequency_Response;
-    int Frequency_Range;
     int Sensitivity;
     int Impedance;
 public:
@@ -236,32 +235,29 @@ public:
         commodityName = "";
         lowest_Frequency_Response = 0;
         highest_Frequency_Response = 0;
-        Frequency_Range = 0;
         Sensitivity = 0;
         Impedance = 0;
         description = "";
     }
 
     void detail() override{
-        cout << commodityName << endl;
-        cout << "price: " << price << endl;
-        cout << "Lowest Frequency Response: " <<lowest_Frequency_Response<<endl;
-        cout << "Highest Frequency Response: " <<highest_Frequency_Response<<endl;
-        cout << "Frequency Range: " <<Frequency_Range<<endl;
-        cout << "Sensitivity: " <<Sensitivity<<endl;
-        cout << "Impedance: " <<Impedance<<endl;
+        cout << "* " << commodityName << " *" << endl;
+        cout << "price: " << price << "  dollars" <<endl;
+        cout << "Lowest Frequency Response: " <<lowest_Frequency_Response << "  Hz" <<endl;
+        cout << "Highest Frequency Response: " <<highest_Frequency_Response << "  kHz" <<endl;
+        cout << "Sensitivity: " <<Sensitivity<< "  dB" << endl;
+        cout << "Impedance: " <<Impedance<< "  Ohm" <<endl;
         cout << "description: " << description << endl;
         cout << "----------------------------" << endl;
     }
 
     void detail(int amount) override{
-        cout << commodityName << endl;
-        cout << "price: " << price << endl;
-        cout << "Lowest Frequency Response: " <<lowest_Frequency_Response<<endl;
-        cout << "Highest Frequency Response: " <<highest_Frequency_Response<<endl;
-        cout << "Frequency Range: " <<Frequency_Range<<endl;
-        cout << "Sensitivity: " <<Sensitivity<<endl;
-        cout << "Impedance: " <<Impedance<<endl;
+        cout << "* " << commodityName << " *" << endl;
+        cout << "price: " << price << "  dollars" <<endl;
+        cout << "Lowest Frequency Response: " <<lowest_Frequency_Response << "  Hz" <<endl;
+        cout << "Highest Frequency Response: " <<highest_Frequency_Response << "  kHz" <<endl;
+        cout << "Sensitivity: " <<Sensitivity<< "  dB" << endl;
+        cout << "Impedance: " <<Impedance<< "  Ohm" <<endl;
         cout << "description: " << description << endl;
         cout << "x " << amount << endl;
         cout << "----------------------------" << endl;
@@ -276,8 +272,6 @@ public:
         lowest_Frequency_Response = InputHandler::numberInput();
         cout<<"Please intput the highest frequency response"<<endl;
         highest_Frequency_Response = InputHandler::numberInput();
-        cout<<"Please input the Frequency Range"<<endl;
-        Frequency_Range = InputHandler::numberInput();
         cout<<"Please input the Sensitivity"<<endl;
         Sensitivity = InputHandler::numberInput();
         cout<<"Please input the Impedance"<<endl;
@@ -295,14 +289,14 @@ public:
 
     void save(fstream& file) override{
         file << price << '\n' << commodityName <<'\n' <<lowest_Frequency_Response;
-        file << '\n' << highest_Frequency_Response << '\n' << Frequency_Range <<'\n';
+        file << '\n' << highest_Frequency_Response << '\n' ;
         file << Sensitivity <<'\n' << Impedance << '\n' << description << '\n';
     }
 
     void load(fstream& file) override{
         file >> price ;
         commodityName = InputHandler::readWholeLine(file);
-        file >> lowest_Frequency_Response >> highest_Frequency_Response >> Frequency_Range;
+        file >> lowest_Frequency_Response >> highest_Frequency_Response ;
         file >> Sensitivity >> Impedance;
         description = InputHandler::readWholeLine(file);
 
@@ -315,8 +309,8 @@ private:
     string description;
     string commodityName;
     int Screen_Size;
-    string Mobile_Communication;
-    int Pixel;
+    string CellularandWireless;
+    int Camera;
     string chip;
     int weight;
     int Vedeo_playback;
@@ -328,8 +322,8 @@ public:
         commodityName = "";
         description = "";
         Screen_Size = 0;
-        Mobile_Communication = "";
-        Pixel = 0;
+        CellularandWireless = "";
+        Camera = 0;
         chip = "";
         weight = 0;
         Vedeo_playback = 0;
@@ -344,27 +338,27 @@ public:
     }
 
     void detail()override {
-        cout << commodityName << endl;
-        cout << "price: " << price << endl;
-        cout << "Screen Size: " <<Screen_Size<<endl;
-        cout << "Mobile Communication: " <<Mobile_Communication<<endl;
-        cout << "Pixel: " <<Pixel<<endl;
-        cout << "chip: " <<chip<<endl;
-        cout << "weight: " <<weight<<endl;
-        cout << "Vedeo playback time: " <<Vedeo_playback<<endl;
+        cout << "* " << commodityName << " *" << endl;
+        cout << "price: " << price << "  dollars" <<endl;
+        cout << "Screen Size: " << Screen_Size << "  inch" <<endl;
+        cout << "Cellular and Wireless: " << CellularandWireless <<endl;
+        cout << "Camera: " << Camera << "  pixel" << endl;
+        cout << "chip: " << chip <<endl;
+        cout << "weight: " << weight << "  grams" <<endl;
+        cout << "Vedeo playback time: " << Vedeo_playback << "  hours" <<endl;
         cout << "description: " << description << endl;
         cout << "----------------------------" << endl;
     }
 
     void detail(int amount) override{
-        cout << commodityName << endl;
-        cout << "price: " << price << endl;
-        cout << "Screen Size: " <<Screen_Size<<endl;
-        cout << "Mobile Communication: " <<Mobile_Communication<<endl;
-        cout << "Pixel: " <<Pixel<<endl;
-        cout << "chip: " <<chip<<endl;
-        cout << "weight: " <<weight<<endl;
-        cout << "Vedeo playback time: " <<Vedeo_playback<<endl;
+        cout << "* " << commodityName << " *" << endl;
+        cout << "price: " << price << "  dollars" <<endl;
+        cout << "Screen Size: " << Screen_Size << "  inch" <<endl;
+        cout << "Cellular and Wireless: " << CellularandWireless <<endl;
+        cout << "Camera: " << Camera << "  pixel" << endl;
+        cout << "chip: " << chip <<endl;
+        cout << "weight: " << weight << "  grams" <<endl;
+        cout << "Vedeo playback time: " << Vedeo_playback << "  hours" <<endl;
         cout << "description: " << description << endl;
         cout << "x " << amount << endl;
         cout << "----------------------------" << endl;
@@ -377,10 +371,10 @@ public:
         price = InputHandler::numberInput();
         cout<<"Please intput the Screen Size"<<endl;
         Screen_Size = InputHandler::numberInput();
-        cout<<"Please intput the Mobile Communication"<<endl;
-        Mobile_Communication = InputHandler::readWholeLine();
-        cout<<"Please input the Pixel"<<endl;
-        Pixel = InputHandler::numberInput();
+        cout<<"Please intput the Cellular and Wireless"<<endl;
+        CellularandWireless = InputHandler::readWholeLine();
+        cout<<"Please input the Camera(pixel)"<<endl;
+        Camera = InputHandler::numberInput();
         cout<<"Please input the Chip"<<endl;
         chip= InputHandler::readWholeLine();
         cout<<"Please input the Weight"<<endl;
@@ -393,16 +387,16 @@ public:
 
     void save(fstream& file) override{
         file  << price << '\n' << commodityName << '\n';
-        file << Screen_Size << '\n'  << Mobile_Communication;
-        file << '\n' << Pixel << '\n' << chip << '\n' << weight << '\n' << Vedeo_playback << '\n' << description << '\n';
+        file << Screen_Size << '\n'  << CellularandWireless;
+        file << '\n' << Camera << '\n' << chip << '\n' << weight << '\n' << Vedeo_playback << '\n' << description << '\n';
     }
 
     void load(fstream& file) override{
         file >> price;
         commodityName = InputHandler::readWholeLine(file);
         file >> Screen_Size ;
-        Mobile_Communication = InputHandler::readWholeLine(file);
-        file >> Pixel;
+        CellularandWireless = InputHandler::readWholeLine(file);
+        file >> Camera;
         chip = InputHandler::readWholeLine(file);
         file >> weight >> Vedeo_playback;
         description = InputHandler::readWholeLine(file);
@@ -447,14 +441,14 @@ public:
     }
 
     void detail() override{
-        cout << commodityName << endl;
-        cout << "price: " << price << endl;
-        cout << "Screen Size: " <<Screen_Size<<endl;
+        cout << "* " << commodityName << " *" << endl;
+        cout << "price: " << price <<"  dollars"<< endl;
+        cout << "Screen Size: " << Screen_Size << "  inch" <<endl;
         cout << "Operatin System: " <<OStype<<endl;
         cout << "CPU: " <<CPUtype<<endl;
         cout << "GPU: " <<GPUtype<<endl;
-        cout << "Memory Size: " <<memorysize<<endl;
-        cout << "Disk Size: " <<Disksize<<endl;
+        cout << "Max Memory Size: " <<memorysize << "  GB" <<endl;
+        cout << "Disk Size: " << Disksize << "  GB" <<endl;
         cout << "Does it have RGB light" ;
         if(RGB == 1)cout << "  yes" << endl;
         else if(RGB == 2)cout <<"  no" << endl;
@@ -463,14 +457,14 @@ public:
     }
 
     void detail(int amount) override{
-        cout << commodityName << endl;
-        cout << "price: " << price << endl;
-        cout << "Screen Size: " <<Screen_Size<<endl;
+        cout << "* " << commodityName << " *" << endl;
+        cout << "price: " << price <<"  dollars"<< endl;
+        cout << "Screen Size: " << Screen_Size << "  inch" <<endl;
         cout << "Operatin System: " <<OStype<<endl;
         cout << "CPU: " <<CPUtype<<endl;
         cout << "GPU: " <<GPUtype<<endl;
-        cout << "Memory Size: " <<memorysize<<endl;
-        cout << "Disk Size: " <<Disksize<<endl;
+        cout << "Max Memory Size: " <<memorysize << "  GB" <<endl;
+        cout << "Disk Size: " << Disksize << "  GB" <<endl;
         cout << "Does it have RGB light" ;
         if(RGB == 1)cout << "  yes" << endl;
         else if(RGB == 2)cout <<"  no" << endl;
@@ -490,7 +484,7 @@ public:
         Screen_Size = InputHandler::numberInput();
         cout<<"Please input the CPU"<<endl;
         CPUtype = InputHandler::readWholeLine();
-        cout<<"Please input the Memory Size"<<endl;
+        cout<<"Please input the max Memory Size"<<endl;
         memorysize = InputHandler::numberInput();
         cout<<"Please input the Disk Size"<<endl;
         Disksize = InputHandler::numberInput();
@@ -541,7 +535,6 @@ public:
 
     CommodityList() {
         iter = commodityList[0].begin();
-
     }
 
     /*
@@ -560,7 +553,7 @@ public:
             for(int j=0 ; (iter+j) != commodityList[i].end() ; j++){
                 if(commodityList[i].empty())break;
                 time++;
-                cout << time <<endl;
+                cout << time << " ." <<endl;
                 (*(iter+j))->detail();
             }
         }
@@ -582,7 +575,7 @@ public:
             for(int j=0 ; (iter+j) != commodityList[i].end() ; j++){
                 if(commodityList[i].empty())break;
                 time++;
-                cout << time <<endl;
+                cout << time << " ." <<endl;
                 cout << (*(iter+j))->getName() << endl;
             }
         }
@@ -594,11 +587,7 @@ public:
      * RETURN: Bool. True if the list is empty, otherwise false
      */
     bool empty() {
-        int emp=0;
-        for(int i=0 ; i<3 ;i++){
-            if(!commodityList[i].empty()) emp ++;
-        }
-        if(emp == 0)return true;
+        if(commodityList->empty())return true;
         else return false;
     }
 
@@ -670,7 +659,6 @@ public:
      * OUTPUT: Bool. True if the object existing, otherwise false
      */
     bool isExist(Commodity* commodity) {
-        cout << commodity->getName() << endl;
         for(int i = 0 ; i < 3 ; i++ ){
             iter = commodityList[i].begin();
             for(int j=0 ; j < commodityList[i].size() ; j++){
@@ -763,7 +751,6 @@ public:
                 }
                 if ( (*(itershop+i))->getName() == entry->getName()) {
                     Quantity[0].insert((iterquan+i), (*(iterquan+i) + 1) );
-                    cout << (*(itershop+i))->getName();
                     break;
                 }
             }
@@ -779,7 +766,6 @@ public:
                 }
                 if( (*(itershop+i))->getName() == entry->getName() ) {
                     Quantity[1].insert( (iterquan+i) , (*(iterquan+i)+1) );
-                    cout <<  (*(itershop+i) )->getName();
                     break;
                 }
             }
@@ -795,7 +781,6 @@ public:
                 }
                 if( (*(itershop+i) )->getName() == entry->getName() ) {
                     Quantity[2].insert( (iterquan+i) , (*(iterquan+i))+1);
-                    cout <<  (*(itershop+i) )->getName();
                     break;
                 }
             }
@@ -850,7 +835,6 @@ public:
             while(  itershop != ShoppingCart_List[i].end() ){
                 if( (*itershop) == NULL )break;
                 if( time == index ){
-                    cout<<"checkgold\n";
                     ShoppingCart_List[i].erase(itershop);
                     Quantity[i].erase(iterquan);
                     time++;
@@ -888,7 +872,6 @@ public:
      * OUTPUT: Bool. True if the cart is empty, otherwise false.
      */
     bool empty() {
-        cout << "check\n";
         if(ShoppingCart_List->empty())return true;
         else return false;
     }

@@ -1,0 +1,10 @@
+72900
+MSI GE76 Raider 10UE-263TW
+17
+Windows 10
+64
+Intel Core i7-10870H
+1
+GeForce RTX 3060 6GB GDDR 6
+2048
+have Mystic Light and cooler Boost 5
