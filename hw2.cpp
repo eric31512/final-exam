@@ -898,40 +898,46 @@ private:
         fstream Fileinput ;
         int index ;
         for( int i = 0 ; i < 3 ; i++){
-            if(i == 0){
-                index = 0;
-                Fileinput.open("SoundCommodity.txt" , ios::in);
-                while(!Fileinput.eof()){
-                    fileinput = new Sound();
-                    fileinput->load(Fileinput);
-                    if(!Fileinput.fail()){
-                        commodityList.add(fileinput,index);
+                if(i == 0){
+                    index = 0;
+                    Fileinput.open("SoundCommodity.txt" , ios::in);
+                    if(Fileinput.is_open()) {
+                        while (!Fileinput.eof()) {
+                            fileinput = new Sound();
+                            fileinput->load(Fileinput);
+                            if (!Fileinput.fail()) {
+                                commodityList.add(fileinput, index);
+                            }
+                        }
                     }
                 }
-            }
-            if(i == 1){
-                index = 1;
-                Fileinput.open("SmartphoneCommodity.txt" , ios::in);
-                while(!Fileinput.eof()){
-                    fileinput = new Smartphone();
-                    fileinput->load(Fileinput);
-                    if(!Fileinput.fail()){
-                        commodityList.add(fileinput,index);
+                if(i == 1){
+                    index = 1;
+                    Fileinput.open("SmartphoneCommodity.txt" , ios::in);
+                    if(Fileinput.is_open()){
+                        while(!Fileinput.eof()){
+                            fileinput = new Smartphone();
+                            fileinput->load(Fileinput);
+                            if(!Fileinput.fail()){
+                                commodityList.add(fileinput,index);
+                            }
+                        }
                     }
                 }
-            }
-            if(i == 2){
-                index = 2;
-                Fileinput.open("LaptopCommodity.txt" , ios::in);
-                while(!Fileinput.eof()){
-                    fileinput = new Laptop();
-                    fileinput->load(Fileinput);
-                    if(!Fileinput.fail()){
-                        commodityList.add(fileinput,index);
+                if(i == 2){
+                    index = 2;
+                    Fileinput.open("LaptopCommodity.txt" , ios::in);
+                    if(Fileinput.is_open()){
+                        while(!Fileinput.eof()){
+                            fileinput = new Laptop();
+                            fileinput->load(Fileinput);
+                            if(!Fileinput.fail()){
+                                commodityList.add(fileinput,index);
+                            }
+                        }
                     }
                 }
-            }
-            Fileinput.close();
+                Fileinput.close();
         }
     }
 
